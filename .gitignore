@@ -1,0 +1,11 @@
+bin/
+obj/
+*.user
+*.suo
+.vs/
+TestResults/
+
+# Local database created by the API on first run
+*.db
+*.db-wal
+*.db-shm

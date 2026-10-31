@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BankTeller.Api/BankTeller.Api.vbproj" />
+    <Project Path="src/BankTeller.Desktop/BankTeller.Desktop.vbproj" />
+    <Project Path="src/BankTeller.Shared/BankTeller.Shared.vbproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BankTeller.Tests/BankTeller.Tests.vbproj" />
+  </Folder>
+</Solution>

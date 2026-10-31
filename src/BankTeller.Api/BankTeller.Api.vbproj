@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>BankTeller.Api</RootNamespace>
+    <StartupObject>BankTeller.Api.Program</StartupObject>
+  </PropertyGroup>
+
+  <!-- VB has no implicit usings; import the ASP.NET Core namespaces project-wide. -->
+  <ItemGroup>
+    <Import Include="Microsoft.AspNetCore.Authorization" />
+    <Import Include="Microsoft.AspNetCore.Builder" />
+    <Import Include="Microsoft.AspNetCore.Http" />
+    <Import Include="Microsoft.AspNetCore.Mvc" />
+    <Import Include="Microsoft.Extensions.Configuration" />
+    <Import Include="Microsoft.Extensions.DependencyInjection" />
+    <Import Include="Microsoft.Extensions.Hosting" />
+    <Import Include="Microsoft.Extensions.Logging" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BankTeller.Shared\BankTeller.Shared.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.14" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.14" />
+  </ItemGroup>
+
+</Project>
